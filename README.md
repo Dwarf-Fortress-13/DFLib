@@ -1,4 +1,4 @@
-# HOW TO BUILD
+# Compiling
 ## Windows
 ```sh
 cargo build --release --target i686-pc-windows-msvc
