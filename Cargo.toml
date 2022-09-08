@@ -9,4 +9,6 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
+colors-transform = "0.2.11"
+image = "0.24.3"
 noise = "0.7"
