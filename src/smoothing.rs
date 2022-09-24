@@ -3,11 +3,11 @@ use std::cmp::{max, min};
 use image::{Rgba, RgbaImage};
 
 
-byond_fn!(fn smooth_floor(center, target, cname, tname){
-    _smooth_floor(center, target, cname, tname).ok()
+byond_fn!(fn smooth_borders(center, target, cname, tname){
+    _smooth_borders(center, target, cname, tname).ok()
 });
 
-fn _smooth_floor(center:&str, target:&str, cname:&str, tname:&str) -> Result<String, bool>{
+fn _smooth_borders(center:&str, target:&str, cname:&str, tname:&str) -> Result<String, bool>{
     let center_data:Vec<&str> = center.split(",").collect();
     let target_data:Vec<&str> = target.split(",").collect();
     let mut img = RgbaImage::new(32,32);
