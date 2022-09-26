@@ -2,5 +2,3 @@
 mod byond;
 
 mod noise;
-
-mod smoothing;
